@@ -15,7 +15,7 @@ const styles = theme => ({
     borderRadius: "15px",
     textAlign: "center",
     lineHeight: "normal",
-    boxShadow: "3px 3px 3px #888888"
+    boxShadow: "3px 3px 3px #5d5d5d"
   },
   container: {
     display: "flex",
