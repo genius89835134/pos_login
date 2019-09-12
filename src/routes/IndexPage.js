@@ -1,24 +1,12 @@
 import React from "react";
-import { connect } from "dva";
 import { withStyles } from "@material-ui/core/styles";
 import Login from "../components/Login";
-
+import "./IndexPage.css";
 const styles = theme => ({
-  LoginWindow: {
-    background: "#f0f2f5",
-    width: "350px",
-    height: "300px",
-    margin: "0 auto",
-    borderRadius: "15px",
-    textAlign: "center",
-    lineHeight: "60px"
-  },
-  InputText: {
-    margin: "0 auto",
-    width: "300px",
-    height: "200px",
-    lineHeight: "30px",
-    textAlign: "center"
+  container: {
+    background: "#4a9258",
+    width: "100%",
+    height: "100%"
   }
 });
 class IndexPage extends React.Component {
@@ -32,10 +20,8 @@ class IndexPage extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <div className={classes.LoginWindow}>
-        <div className={classes.InputText}>
-          <Login></Login>
-        </div>
+      <div className={classes.container}>
+        <Login></Login>
       </div>
     );
   }
