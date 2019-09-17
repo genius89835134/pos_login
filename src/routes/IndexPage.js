@@ -4,9 +4,7 @@ import Login from "../components/Login";
 import "./IndexPage.css";
 const styles = theme => ({
   container: {
-    background: "#4a9258",
-    width: "100%",
-    height: "100%"
+    width: "100%"
   }
 });
 class IndexPage extends React.Component {
@@ -16,12 +14,11 @@ class IndexPage extends React.Component {
       data: []
     };
   }
-
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.container}>
-        <Login></Login>
+        <Login />
       </div>
     );
   }
